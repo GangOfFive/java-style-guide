@@ -1,3 +1,12 @@
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Java Style Guide for Gang of Five](#java-style-guide-for-gang-of-five)
+	- [Naming Conventions](#naming-conventions)
+	- [Code Formatting](#code-formatting)
+		- [Blocks](#blocks)
+		- [Whitespace](#whitespace)
+		- [Comments](#comments)
+
 # Java Style Guide for *Gang of Five*
 
 Based on [Google's](http://google-styleguide.googlecode.com/svn/trunk/javaguide.html) Java style guide.
