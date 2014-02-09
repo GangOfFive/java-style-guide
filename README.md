@@ -1,3 +1,12 @@
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Estándares de Java para Gang of Five](#est%C3%A1ndares-de-java-para-gang-of-five)
+	- [Nombres](#nombres)
+	- [Formato de Código](#formato-de-c%C3%B3digo)
+		- [Bloques](#bloques)
+		- [Espacios](#espacios)
+		- [Comentarios](#comentarios)
+
 # Estándares de Java para *Gang of Five*
 
 Basado en [Google's Java style guide](http://google-styleguide.googlecode.com/svn/trunk/javaguide.html).
