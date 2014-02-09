@@ -60,6 +60,7 @@ Basado en [Google's Java style guide](http://google-styleguide.googlecode.com/sv
     }
     ~~~
  - Si un bloque está vacío, no poner espacios entre los corchetes.
+
     ~~~java
     void doNothing() {}
     ~~~
