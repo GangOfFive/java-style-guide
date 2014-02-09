@@ -18,6 +18,7 @@ Based on [Google's](http://google-styleguide.googlecode.com/svn/trunk/javaguide.
  - Use camelCase for variables, methods, and PascalCase for classes and enums.
  - Use `NAMES_LIKE_THIS` for constants.
  - Be descriptive with your naming.
+ - Always declare an access modifier before each method and/or class (protected, private or public)
 
     ~~~java
     // bad
@@ -42,7 +43,7 @@ Based on [Google's](http://google-styleguide.googlecode.com/svn/trunk/javaguide.
     if (test)
         return false;
 
-    // good
+    // bad
     if (test) return false;
 
     // good
@@ -51,10 +52,10 @@ Based on [Google's](http://google-styleguide.googlecode.com/svn/trunk/javaguide.
     }
 
     // bad
-    boolean exists() { return false; }
+    public boolean exists() { return false; }
 
     // good
-    boolean exists() {
+    public boolean exists() {
         return false;
     }
     ~~~
@@ -68,17 +69,17 @@ Based on [Google's](http://google-styleguide.googlecode.com/svn/trunk/javaguide.
 
     ~~~java
     // bad
-    boolean exists() {
+    private boolean exists() {
     ∙∙return false;
     }
 
     // bad
-    boolean exists() {
+    private boolean exists() {
     ∙return false;
     }
 
     // good
-    boolean exists() {
+    private boolean exists() {
     ∙∙∙∙return false;
     }
     ~~~
@@ -87,12 +88,12 @@ Based on [Google's](http://google-styleguide.googlecode.com/svn/trunk/javaguide.
 
     ~~~java
     // bad
-    void sayHello(){
+    protected void sayHello(){
         System.out.println("hello");
     }
 
     // good
-    void sayHello() {
+    protected void sayHello() {
         System.out.println("hello");
     }
     ~~~
