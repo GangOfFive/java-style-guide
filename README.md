@@ -30,6 +30,7 @@ Basado en [Google's Java style guide](http://google-styleguide.googlecode.com/sv
     public List<Recipe> searchRecipes(String searchTerms) {
         // ..stuff..
     }
+    ~~~
 
 ## Formato de Código
  - Longitud máxima de líneas: `80`. Si no es posible utilizar menos de 80 carácteres, intentar
@@ -100,6 +101,7 @@ Basado en [Google's Java style guide](http://google-styleguide.googlecode.com/sv
     ~~~
 
  - Colocar espacios entre operadores.
+
     ~~~java
     // No recomendado
     int x=y+5;
@@ -111,6 +113,7 @@ Basado en [Google's Java style guide](http://google-styleguide.googlecode.com/sv
  - Colocar una línea vacía al final de los archivos.
 
 ### Comentarios
+
  - Utilizar sólo las siguientes `tags` para los comentarios de Javadoc:
    - `@param`
    - `@return` (no utilizar en constructores o métodos que retornen `void`)
@@ -128,7 +131,7 @@ Basado en [Google's Java style guide](http://google-styleguide.googlecode.com/sv
     ~~~java
     /**
      * Returns an Image object that can then be painted on the screen. 
-     * The url argument must specify an absolute {@link URL}. The name
+     * The url argument must specify an absolute URL. The name
      * argument is a specifier that is relative to the url argument. 
      * <p>
      * This method always returns immediately, whether or not the 
