@@ -1,131 +1,119 @@
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+# Estándares de Java para *Gang of Five*
 
-- [Java Style Guide for Gang of Five](#java-style-guide-for-gang-of-five)
-	- [Naming Conventions](#naming-conventions)
-	- [Code Formatting](#code-formatting)
-		- [Blocks](#blocks)
-		- [Whitespace](#whitespace)
-		- [Comments](#comments)
+Basado en [Google's Java style guide](http://google-styleguide.googlecode.com/svn/trunk/javaguide.html).
 
-# Java Style Guide for *Gang of Five*
-
-Based on [Google's](http://google-styleguide.googlecode.com/svn/trunk/javaguide.html) Java style guide.
-
-## Naming Conventions
- - Java files should be named like this:
+## Nombres
+ - Los archivos de Java se deberán llamar de la siguiente forma:
    - `User.java`
    - `PinkUnicorn.java`
- - Use camelCase for variables, methods, and PascalCase for classes and enums.
- - Use `NAMES_LIKE_THIS` for constants.
- - Be descriptive with your naming.
- - Always declare an access modifier before each method and/or class (protected, private or public)
+ - Utilizar `camelCase` para variables y métodos, y `PascalCase` para clases y enumeraciones.
+ - Utilizar el siguiente formato para constantes: `EARTH_GRAVITY`.
+ - Ser descriptivo con los nombres.
+ - Utilizar siempre modificadores de acceso para métodos y clases (`protected`, `private` o `public`).
 
     ~~~java
-    // bad
+    // No recomendado
     List<Recipe> s(String str) {
         // ...stuff...
     }
 
-    // good
-    List<Recipe> searchRecipes(String searchTerms) {
+    // Recomendado
+    public List<Recipe> searchRecipes(String searchTerms) {
         // ..stuff..
     }
 
-## Code Formatting
- - Soft line length limit: 80.
- - Hard line length limit: 120.
+## Formato de Código
+ - Longitud máxima de líneas: `80`. Si no es posible utilizar menos de 80 carácteres, intentar
+   al menos utilizar menos de `120`.
 
-### Blocks
- - Use braces with all multi-line blocks.
+### Bloques
+ - Utilizar corchetes para todos los bloques de más de una línea.
 
     ~~~java
-    // bad
+    // No recomendado
     if (test)
         return false;
 
-    // bad
+    // No recomendado
     if (test) return false;
 
-    // good
+    // Recomendado
     if (test) {
         return false;
     }
 
-    // bad
+    // No recomendado
     public boolean exists() { return false; }
 
-    // good
+    // Recomendado
     public boolean exists() {
         return false;
     }
     ~~~
- - Empty blocks. If a block is empty, do not put any spacing between the braces.
+ - Si un bloque está vacío, no poner espacios entre los corchetes.
     ~~~java
     void doNothing() {}
     ~~~
 
-### Whitespace
- - Use soft tabs set to 4 spaces
+### Espacios
+ - Utilizar `4` espacios para la indentación del código.
 
     ~~~java
-    // bad
+    // No recomendado
     private boolean exists() {
     ∙∙return false;
     }
 
-    // bad
+    // No recomendado
     private boolean exists() {
     ∙return false;
     }
 
-    // good
+    // Recomendado
     private boolean exists() {
     ∙∙∙∙return false;
     }
     ~~~
 
- - Place 1 space before the leading brace.
+ - Colocar un espacio antes del primer corchete.
 
     ~~~java
-    // bad
+    // No recomendado
     protected void sayHello(){
         System.out.println("hello");
     }
 
-    // good
+    // Recomendado
     protected void sayHello() {
         System.out.println("hello");
     }
     ~~~
 
- - Set off operators with spaces.
+ - Colocar espacios entre operadores.
     ~~~java
-    // bad
+    // No recomendado
     int x=y+5;
 
-    // good
+    // Recomendado
     int x = y + 5;
     ~~~
 
- - Place an empty newline at the end of the file.
+ - Colocar una línea vacía al final de los archivos.
 
-### Comments
- - Use only the following tags for Javadoc comments:
-   - @param
-   - @return (do not use for methods that return void or constructors)
-   - @see
-   - @throws
+### Comentarios
+ - Utilizar sólo las siguientes `tags` para los comentarios de Javadoc:
+   - `@param`
+   - `@return` (no utilizar en constructores o métodos que retornen `void`)
+   - `@see`
+   - `@throws`
 
- - Do not use comments for self-explanatory methods such as get and set methods.
- - Do not use commments for POJO classes.
- - Use one blank line before @param.
- - Treat @param and @return as a phrase
-   The @param and @return should be treated as phrases rather than complete sentences.
-   They should start with a lower case letter, typically using the word "the".
-   They should not end with a dot.
+ - No utilizar comentarios para `gets` y `sets` al menos que sea necesario.
+ - No utilizar comentarios para POJOs.
+ - Dejar una línea en blanco antes del primer `@param`.
+ - Utilizar frases (no oraciones completas) para `@param` y `@return`.
 
- - Use `/** ... */` for multiline comments. Include a description, specify
-   types and values for all parameters and return values.
+ - Utilizar `/** ... */` para comentarios multilínea. Incluir descripción, y valores para
+   los parámetros y lo que retorne el método.
 
     ~~~java
     /**
@@ -152,8 +140,7 @@ Based on [Google's](http://google-styleguide.googlecode.com/svn/trunk/javaguide.
      }
     ~~~
 
- - Prefixing your comments with `FIXME` or `TODO` helps other developers quickly
-   understand if you're pointing out a problem that needs to be revisited, or if
-   you're suggesting a solution to the problem that needs to be implemented. These
-   are different than regular comments because they are actionable. The actions
-   are `FIXME -- need to figure this out` or `TODO -- need to implement`.
+ - Colocar `FIXME` o `TODO` antes de los comentarios para indicar si hay un problema
+   que se necesita solucionar o una solución que aún se debe implementar.
+   - `FIXME -- need to figure this out`
+   - `TODO -- need to implement`
