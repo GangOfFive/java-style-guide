@@ -1,4 +1,4 @@
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+**Tabla de Contenidos**
 
 - [Estándares de Java para Gang of Five](#est%C3%A1ndares-de-java-para-gang-of-five)
 	- [Nombres](#nombres)
