@@ -33,7 +33,7 @@ Basado en [Google's Java style guide](http://google-styleguide.googlecode.com/sv
     ~~~
 
 ## Formato de Código
- - Longitud máxima de líneas: `80`. Si no es posible utilizar menos de 80 carácteres, intentar
+ - Longitud máxima de líneas: `80`. Si no es posible utilizar menos de 80 caracteres, intentar
    al menos utilizar menos de `120`.
 
 ### Bloques
