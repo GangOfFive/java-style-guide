@@ -17,6 +17,7 @@ Basado en [Google's Java style guide](http://google-styleguide.googlecode.com/sv
    - `PinkUnicorn.java`
  - Utilizar `camelCase` para variables y métodos, y `PascalCase` para clases y enumeraciones.
  - Utilizar el siguiente formato para constantes: `EARTH_GRAVITY`.
+ - Anteponer `I` a los nombres de las interfaces: `ITaggable`, `IRecipe`.
  - Ser descriptivo con los nombres.
  - Utilizar siempre modificadores de acceso para métodos y clases (`protected`, `private` o `public`).
 
